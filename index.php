@@ -8,9 +8,9 @@ include "includes/header.php"
     <div class="jumbotron">
     	<div class="container">
     		<h1>Welcome to Panama Shipping</h1>
-    		<p>Some into here about company</p>
+    		<p>Please login to use this web application</p>
     		<p>
-    			<a class="btn btn-primary btn-lg">Learn more</a>
+    			<a class="btn btn-primary btn-lg">Login</a>
     		</p>
     	</div>
     </div>
