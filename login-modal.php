@@ -1,5 +1,5 @@
 <!-- BEGIN # BOOTSNIP INFO -->
-        <a href="#" class="btn btn-default btn-login" role="button" data-toggle="modal" data-target="#login-modal">Login</a>
+<!--        <a href="#" class="btn btn-default btn-login" role="button" data-toggle="modal" data-target="#login-modal">Login</a>-->
 <!-- END # BOOTSNIP INFO -->
 
 <!-- BEGIN # MODAL LOGIN -->

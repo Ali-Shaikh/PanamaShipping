@@ -3,12 +3,15 @@ include "includes/header.php"
 ?>
     <div class="row vertical-center">
         <div class="container">
-            <div class="well">
+            <div class="well welcome-text">
                 Hello, to access Panama Shipping please
-                <?php
-                    include "login.php";
-                ?>
+                <!-- BEGIN # BOOTSNIP INFO -->
+                <a href="#" class="btn btn-default btn-login" role="button" data-toggle="modal" data-target="#login-modal">Login</a>
+                <!-- END # BOOTSNIP INFO -->
             </div>
+            <?php
+                include "login-modal.php";
+            ?>
         </div>
     </div>
 
