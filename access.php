@@ -1,9 +1,17 @@
-<!-- footer start-->
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+<?php
+include "includes/header.php"
+?>
+    <div class="row vertical-center">
+        <div class="container">
+            <div class="well">
+                Hello, to access Panama Shipping please
+                <?php
+                    include "login.php";
+                ?>
+            </div>
+        </div>
     </div>
-</footer>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
