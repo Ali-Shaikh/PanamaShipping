@@ -8,7 +8,9 @@ include "includes/nav.php"
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <table id="example" class="table table-bordered table-responsive table-hover" cellspacing="0" width="100%">
+                <div class="row">
+                <div class="col-md-12"><button type="button" id="button" class="btn btn-danger">Delete Selected Row </button> </div></br></br></div>
+                <table id="example" class="table table-bordered table-responsive table-hover cellspacing="0" width="100%">
                     <thead>
                     <tr>
                         <th>Name</th>
