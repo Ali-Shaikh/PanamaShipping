@@ -1,12 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
-body {
-    background: -webkit-linear-gradient(90deg, #b3dced 10%, #29b8e5  90%);
-    background: -moz-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
-    background: -ms-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
-    background: -o-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
-    background: linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
-    font-family: 'Open Sans', sans-serif!important;
-}
+
+/*<style>*/
+/*body {*/
+    /*background: -webkit-linear-gradient(90deg, #b3dced 10%, #29b8e5  90%);*/
+    /*background: -moz-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);*/
+    /*background: -ms-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);*/
+    /*background: -o-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);*/
+    /*background: linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);*/
+    /*font-family: 'Open Sans', sans-serif!important;*/
+/*}*/
+/*</style>*/
 .well{
     background-color:#fff!important;
     border-radius:0!important;

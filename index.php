@@ -1,6 +1,16 @@
 <?php
 include "includes/header.php"
 ?>
+<style>
+    body {
+        background: -webkit-linear-gradient(90deg, #b3dced 10%, #29b8e5  90%);
+        background: -moz-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
+        background: -ms-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
+        background: -o-linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
+        background: linear-gradient(90deg, #b3dced 10%, #29b8e5 90%);
+        font-family: 'Open Sans', sans-serif!important;
+    }
+</style>
     <div class="row vertical-center">
         <div class="container">
             <div class="well welcome-text">
