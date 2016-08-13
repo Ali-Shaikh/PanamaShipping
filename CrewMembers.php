@@ -29,35 +29,40 @@ include "includes/nav.php"
     });
 </script>
 
+<?php
+include "includes/addcrew-modal.php"
+?>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-12">
-                    <button type="button" id="button-add" class="btn btn-default">Add Crew Member</button>
+                    <button type="button" id="button-add" class="btn btn-default"data-toggle="modal" data-target="#demo-modal-3">Add Crew Member</button>
+
                 </div>
                 </br></br></div>
             <table id="example" class="table table-bordered table-responsive table-hover cellspacing=" 0
             " width="100%">
             <thead>
             <tr>
+                <th>Crew Member ID</th>
                 <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
+                <th>Rank</th>
                 <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Phone No</th>
+                <th>Company</th>
                 <th>Actions</th>
             </tr>
             </thead>
             <tfoot>
             <tr>
+                <th>Crew Member ID</th>
                 <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
+                <th>Rank</th>
                 <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Phone No</th>
+                <th>Company</th>
                 <th>Actions</th>
             </tr>
             </tfoot>

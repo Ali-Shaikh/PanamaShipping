@@ -13,9 +13,7 @@
 <!--    <link href="css/bootstrap-theme.min.css" rel="stylesheet">-->
 
     <!-- Custom -->
-    <link href="css/mainpage.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <link href="css/login.css" rel="stylesheet">
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
 
@@ -37,8 +35,6 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
 
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/login.js"></script>
-
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/select/1.2.0/js/dataTables.select.min.js"></script>

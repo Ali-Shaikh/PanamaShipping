@@ -1,6 +1,13 @@
 <?php
 include "includes/header.php"
 ?>
+
+<!-- Custom -->
+<link href="css/mainpage.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
+
+<script src="js/login.js"></script>
+
 <style>
     body {
         background: -webkit-linear-gradient(90deg, #b3dced 10%, #29b8e5  90%);
