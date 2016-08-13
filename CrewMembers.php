@@ -34,7 +34,7 @@ include "includes/addcrew-modal.php"
 ?>
 
 <div class="container">
-    <div class="row">
+    <div class="row vertical-center">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-12">
@@ -75,6 +75,7 @@ include "includes/addcrew-modal.php"
                 <td>2011/04/25</td>
                 <td>$320,800</td>
                 <td>
+                    <button type="button" id="button-view" class="view btn btn-info">View</button>
                     <button type="button" id="button-edit" class="edit btn btn-success">Edit</button>
                     <button type="button" id="button-delete" class="delete btn btn-danger">Delete</button>
                 </td>
@@ -87,6 +88,7 @@ include "includes/addcrew-modal.php"
                 <td>2011/07/25</td>
                 <td>$170,750</td>
                 <td>
+                    <button type="button" id="button-view" class="view btn btn-info">View</button>
                     <button type="button" id="button-edit" class="edit btn btn-success">Edit</button>
                     <button type="button" id="button-delete" class="delete btn btn-danger">Delete</button>
                 </td>
@@ -99,6 +101,7 @@ include "includes/addcrew-modal.php"
                 <td>2011/04/25</td>
                 <td>$320,800</td>
                 <td>
+                    <button type="button" id="button-view" class="view btn btn-info">View</button>
                     <button type="button" id="button-edit" class="edit btn btn-success">Edit</button>
                     <button type="button" id="button-delete" class="delete btn btn-danger">Delete</button>
                 </td>
@@ -111,6 +114,7 @@ include "includes/addcrew-modal.php"
                 <td>2011/07/25</td>
                 <td>$170,750</td>
                 <td>
+                    <button type="button" id="button-view" class="view btn btn-info">View</button>
                     <button type="button" id="button-edit" class="edit btn btn-success">Edit</button>
                     <button type="button" id="button-delete" class="delete btn btn-danger">Delete</button>
                 </td>

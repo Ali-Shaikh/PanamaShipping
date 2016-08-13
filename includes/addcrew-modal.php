@@ -4,9 +4,29 @@
         background: #c12d2d;
         width: 5%;
     }
+
+    .entry:not(:first-of-type) {
+        margin-top: 10px;
+    }
+
+    .glyphicon {
+        font-size: 12px;
+    }
+
+    .modal-wide .modal-dialog {
+        width: 65%;
+    }
+
+    .modal-wide .modal-body {
+        overflow-y: auto;
+    }
+
+    #tallModal .modal-body p {
+        margin-bottom: 900px
+    }
 </style>
 
-<form class="modal multi-step" id="demo-modal-3">
+<form class="modal multi-step modal-wide fade" id="demo-modal-3">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -178,19 +198,23 @@
                         </label>
                         <input class="form-control" id="name" name="name" type="text"/>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-12">
+                        <hr/>
+                        <h4> If Selected other </h4>
+                    </div>
+                    <div class="form-group col-md-6">
                         <label class="control-label " for="name1">
                             Company Name
                         </label>
                         <input class="form-control" id="name1" name="name1" type="text"/>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label class="control-label " for="date4">
                             Start Date
                         </label>
                         <input class="form-control" id="date4" name="date4" placeholder="DD/MM/YYYY" type="text"/>
                     </div>
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-3">
                         <label class="control-label " for="date5">
                             End Date
                         </label>
@@ -211,10 +235,83 @@
                 </form>
             </div>
             <div class="modal-body step-3" data-step="3">
-                This is the final step.
-                <button type="submit" class="btn">Submit</button>
+                <div id="calc" class="row text-center">
+                    <form role="form" class="entry form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="formInput82">Field label</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"></div>
+                                <select id="formInput82" class="form-control">
+                                    <option value="Certification on Competency">Certification on Competency</option>
+                                    <option value="Certificate of Competence Granted">Certificate of Competence
+                                        Granted
+                                    </option>
+                                    <option value="Certificate of Proficiency in Watch keeping">Certificate of
+                                        Proficiency in Watch keeping
+                                    </option>
+                                    <option value="Personal Survival Techniques">Personal Survival Techniques</option>
+                                    <option value="Fire Prevention and Fire Fighting">Fire Prevention and Fire
+                                        Fighting
+                                    </option>
+                                    <option value="Elementary First Aid">Elementary First Aid</option>
+                                    <option value="Personal Safety and Social Responsibilities ">Personal Safety and
+                                        Social Responsibilities
+                                    </option>
+                                    <option value="Ship Security Awareness">Ship Security Awareness</option>
+                                    <option value="Maritime English Course ">Maritime English Course</option>
+                                    <option value="Pre Sea Training Deck Ratings Programme ">Pre Sea Training Deck
+                                        Ratings Programme
+                                    </option>
+                                    <option value="Tanker Familiarisation ">Tanker Familiarisation</option>
+                                    <option value="International Ships and Port Facilities Security Code">International
+                                        Ships and Port Facilities Security Code
+                                    </option>
+                                    <option value="Refresher Course for Engine Rating ">Refresher Course for Engine
+                                        Rating
+                                    </option>
+                                    <option value="Global Maritime Distress and Safety System">Global Maritime Distress
+                                        and Safety System
+                                    </option>
+                                    <option value="Electronic Navigation System">Electronic Navigation System</option>
+                                    <option value="Radar Observation and Plotting ">Radar Observation and Plotting
+                                    </option>
+                                    <option value="Navigation Watch Keeping Simulator Course ">Navigation Watch Keeping
+                                        Simulator Course
+                                    </option>
+                                    <option value="Automatic Radar Plotting Aids">Automatic Radar Plotting Aids</option>
+                                    <option value="Radar Simulator ">Radar Simulator</option>
+                                    <option value="Hazardous Cargo Material Handling ">Hazardous Cargo Material
+                                        Handling
+                                    </option>
+                                    <option value="Proficiency in Medical Care ">Proficiency in Medical Care</option>
+                                </select></div>
+                        </div>
+<!--                        <div class="form-group">-->
+<!--                            <div class="radio">-->
+<!--                                <label class="control-label">-->
+<!--                                    <input type="radio" name="group" value="Yes"> Yes-->
+<!--                                </label>-->
+<!---->
+<!--                                <label class="control-label">-->
+<!--                                    <input type="radio" name="group" value="No"> No-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm" id="formInput90" placeholder="Start Date">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm" id="formInput98" placeholder="End Date">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-add"><span
+                                class="glyphicon glyphicon-plus"></span></button>
+                    </form>
+                </div>
+                <!--                <button type="submit" class="btn text-centre">Submit</button>-->
             </div>
             <div class="modal-footer">
+                <button type="submit" class="btn btn-success step-3" data-step="3">Submit</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary step step-1" data-step="1"
                         onclick="sendEvent('#demo-modal-3', 2)">Continue
@@ -225,8 +322,10 @@
                 <button type="button" class="btn btn-primary step step-2" data-step="2"
                         onclick="sendEvent('#demo-modal-3', 3)">Continue
                 </button>
+
             </div>
         </div>
+    </div>
     </div>
 </form>
 
@@ -236,5 +335,34 @@
         sendEvent = function (sel, step) {
             $(sel).trigger('next.m.' + step);
         }
+    });
+
+    $(function () {
+        var i = 1;
+        $('#calc:first').find('.input-group-addon').html(i);
+        $(document).on('click', '.btn-add', function (e) {
+            e.preventDefault();
+
+            var controlForm = $('#calc:first'),
+                currentEntry = $(this).parent('.entry:first'),
+                newEntry = $(currentEntry.clone()).appendTo(controlForm);
+            $(newEntry).find('.input-group-addon').html(++i);
+
+            newEntry.find('input').val('');
+            controlForm.find('.entry:not(:last) .btn-add')
+                .removeClass('btn-add').addClass('btn-remove')
+                .removeClass('btn-success').addClass('btn-danger')
+                .html('<span class="glyphicon glyphicon-minus"></span>');
+        }).on('click', '.btn-remove', function (e) {
+            i--;
+            $(this).parent().nextAll('.entry').each(function () {
+                $(this).find('.input-group-addon').html($(this).find('.input-group-addon').html() - 1);
+            });
+            $(this).parents('.entry:first').remove();
+
+
+            e.preventDefault();
+            return false;
+        });
     });
 </script>
