@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="27b0256e-329e-4f37-bdd7-76dc7540dfdc" name="panamashipping.xyz" url="http://Panamashipping.xyz">
+        <fileTransfer host="Panamashipping.xyz" port="21" password="dfcedfcbdfc4dfcbdfc4dfd9dfdfdfc9dfc1dfd9df84dfc9dfc5dfc7" username="admin@panamashipping.xyz">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
