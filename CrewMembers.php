@@ -34,7 +34,7 @@ include "includes/addcrew-modal.php"
 ?>
 
 <div class="container">
-    <div class="row vertical-center">
+    <div class="row">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-12">
@@ -42,8 +42,7 @@ include "includes/addcrew-modal.php"
 
                 </div>
                 </br></br></div>
-            <table id="example" class="table table-bordered table-responsive table-hover cellspacing=" 0
-            " width="100%">
+            <table id="example" class="table table-bordered table-responsive table-hover" cellspacing="0" width="100%">
             <thead>
             <tr>
                 <th>Crew Member ID</th>
