@@ -1,4 +1,5 @@
 
+</body>
 
 <!-- footer start-->
 <div class="container">
@@ -12,7 +13,5 @@
         </div>
     </div>
 </div>
-
-</body>
 
 </html>
