@@ -43,7 +43,7 @@ include "includes/addship-modal.php"
                 <div class="row">
                     <div class="col-md-12">
                         <button type="button" id="button-add" class="btn btn-default" data-toggle="modal"
-                                data-target="#demo-modal-3">Add Ship
+                                data-target="#addcrew-modal">Add Ship
                         </button>
                     </div>
                     </br></br></div>
