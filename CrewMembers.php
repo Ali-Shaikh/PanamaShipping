@@ -8,9 +8,21 @@ include "includes/nav.php"
 
 <script>
     $(document).ready(function () {
-        var table = $('#example').DataTable();
 
-        $('#example tbody').on('click', 'tr', function () {
+        var table = $('#crewmembers').DataTable();
+
+        $('.delete').click(function () {
+            table.row('.selected').remove().draw(false);
+        });
+        $('.edit').click(function () {
+            window.alert("HAHAHAHA Danan wants to edit his face. On serious note Edit works!");
+        });
+    });
+
+    $(document).ready(function () {
+        var table = $('#crewmembers').DataTable();
+
+        $('#crewmembers tbody').on('click', 'tr', function () {
             if ($(this).hasClass('selected')) {
                 $(this).removeClass('selected');
             }
@@ -18,18 +30,6 @@ include "includes/nav.php"
                 table.$('tr.selected').removeClass('selected');
                 $(this).addClass('selected');
             }
-        });
-    });
-
-    $(document).ready(function () {
-
-        var table = $('#example').DataTable();
-
-        $('.delete').click(function () {
-            table.row('.selected').remove().draw(false);
-        });
-        $('.edit').click(function () {
-            window.alert("HAHAHAHA Danan wants to edit his face. On serious note Edit works!");
         });
     });
 </script>
@@ -49,7 +49,8 @@ include "includes/addcrew-modal.php"
 
                 </div>
                 </br></br></div>
-            <table id="example" class="table table-bordered table-responsive table-hover" cellspacing="0" width="100%">
+            <table id="crewmembers" class="table table-bordered table-responsive table-hover" cellspacing="0"
+                   width="100%">
                 <thead>
                 <tr>
                     <th>Crew Member ID</th>
