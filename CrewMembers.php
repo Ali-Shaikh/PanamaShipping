@@ -1,4 +1,10 @@
 <?php
+session_start();
+if( empty($_SESSION['user']) ) {
+    header("Location: index.php");
+}
+?>
+<?php
 include "includes/header.php"
 ?>
 <?php
@@ -73,6 +79,9 @@ include "includes/addcrew-modal.php"
                 </tr>
                 </tfoot>
                 <tbody>
+                <?php foreach ($variable as $key => $value) {
+                    # code...
+                } ?>
                 <tr>
                     <td>1</td>
                     <td>Christina Chavez</td>

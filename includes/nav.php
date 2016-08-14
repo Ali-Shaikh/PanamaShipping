@@ -28,7 +28,7 @@
                 <li><a href="ContactUs.php">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">Log Out</a></li>
+                <li><a href="logout.php">Log Out</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<b class="caret"></b></a>
                     <ul class="dropdown-menu">
