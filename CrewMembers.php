@@ -5,7 +5,6 @@ include "includes/header.php"
 include "includes/nav.php"
 ?>
 
-
 <script>
     $(document).ready(function () {
 
@@ -829,7 +828,6 @@ include "includes/addcrew-modal.php"
         </div>
     </div>
 </div>
-
 
 <?php
 include "includes/footer.php"
