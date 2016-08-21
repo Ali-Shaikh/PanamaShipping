@@ -20,7 +20,7 @@ include "includes/nav.php"
                 table.row('.selected').remove().draw(false);
             });
             $('.edit').click(function () {
-                window.alert("HAHAHAHA Danan wants to edit his face. On serious note Edit works!");
+                window.alert("Edit works!");
             });
         });
 
